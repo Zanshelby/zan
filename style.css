@@ -1,8 +1,69 @@
+/* echoes of Zan - Dark Fantasy Theme */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0b0b17;
+  font-family: 'Orbitron', 'Segoe UI', sans-serif;
+  color: #e0d6ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #c77dff;
+  text-shadow: 0 0 10px #8c00ff;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+input[type="file"] {
+  margin: 20px 0;
+  padding: 12px;
+  border: 2px dashed #8c00ff;
+  background-color: #1a1a2e;
+  color: #e0d6ff;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 250px;
+  text-align: center;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 30px;
+  background-color: #8c00ff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #6e00cc;
+  box-shadow: 0 0 15px #9f00ff;
+}
+
+#previewVideo {
+  display: none;
+  width: 300px;
+  margin-top: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px #c77dff;
+}
+
 .style-cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 12px;
-  margin-top: 25px;
+  gap: 15px;
+  margin-top: 30px;
+  width: 100%;
+  max-width: 400px;
 }
 
 .card {
@@ -10,17 +71,19 @@
   padding: 20px;
   border-radius: 12px;
   text-align: center;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   cursor: pointer;
   transition: 0.3s;
   border: 2px solid transparent;
   color: #e0d6ff;
   user-select: none;
+  box-shadow: 0 0 5px #222;
 }
 
 .card:hover {
   background: #2a2a4e;
   border-color: #8c00ff;
+  transform: scale(1.03);
 }
 
 .card.active {
