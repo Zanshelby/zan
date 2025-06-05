@@ -1,0 +1,30 @@
+.style-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.card {
+  background: #1a1a2e;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 2px solid transparent;
+  color: #e0d6ff;
+  user-select: none;
+}
+
+.card:hover {
+  background: #2a2a4e;
+  border-color: #8c00ff;
+}
+
+.card.active {
+  background: #310066;
+  border: 2px solid #c77dff;
+  box-shadow: 0 0 15px #9f00ff;
+}
